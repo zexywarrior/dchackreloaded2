@@ -1,46 +1,48 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_launch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.firebase.codelab.friendlychat.SignInActivity"
+    tools:background="@drawable/cloudscloudsclouds">
 
+    <TextView
+        android:text="My Dream Journal"
+        android:layout_width="383dp"
+        android:layout_height="127dp"
+        android:id="@+id/HomeTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="160dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
 
-<RelativeLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/activity_launch"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:paddingBottom="@dimen/activity_vertical_margin"
-android:paddingLeft="@dimen/activity_horizontal_margin"
-android:paddingRight="@dimen/activity_horizontal_margin"
-android:paddingTop="@dimen/activity_vertical_margin"
-tools:context="com.google.firebase.codelab.friendlychat.SignInActivity">
+    <Button
+        android:text=" View as Guest   "
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/HomeGuest"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/HomeTitle"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/HomeTitle" />
 
-<com.google.android.gms.common.SignInButton
-    android:id="@+id/sign_in_button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="172dp"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:onClick = "login"
-    />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:onClick="login"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/HomeGuest"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/HomeGuest"
+        android:layout_marginLeft="16dp" />
 
-<TextView
-    android:text="My Dream Journal"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/HomeTitle"
-    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginTop="116dp"
-    android:layout_alignParentLeft="true" />
-
-<Button
-    android:text=" View as Guest   "
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/HomeGuest"
-    android:layout_marginTop="44dp"
-    android:layout_alignTop="@+id/sign_in_button"
-    android:layout_alignStart="@+id/sign_in_button"
-    android:layout_alignLeft="@+id/sign_in_button" />
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
