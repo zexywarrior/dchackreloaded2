@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "99696811346",
+    "firebase_url": "https://finalhack16.firebaseio.com",
+    "project_id": "finalhack16",
+    "storage_bucket": "finalhack16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99696811346:android:b5d75907de594a2d",
+        "android_client_info": {
+          "package_name": "com.google.firebase.codelab.friendlychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99696811346-emvmqv2r646vl2j1eb40n6qt0ug1d74g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.firebase.codelab.friendlychat",
+            "certificate_hash": "565E19447E2980948783C8AC11A3BCDAA502AD47"
+          }
+        },
+        {
+          "client_id": "99696811346-etseq1m32qedvi3bboqr1u3qi1et01n7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.firebase.codelab.friendlychat",
+            "certificate_hash": "565E19447E2980948783CBAC11A3BCDAA502AD47"
+          }
+        },
+        {
+          "client_id": "99696811346-sq26f6npb29po333ab9ab7cj6iul4qic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAJVaRgK8PR4NH-PopEv6NxSD-pd0eY_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99696811346-sq26f6npb29po333ab9ab7cj6iul4qic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
